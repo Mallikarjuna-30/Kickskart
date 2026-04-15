@@ -1,15 +1,27 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import shoes from '../Data/shoes'
+import { useContext } from "react"
+import { useNavigate } from "react-router-dom"
+import { CartContext } from "../Context/CartContext"
 
 const ShoeDetailPage = () => {
+    const navigate = useNavigate()
+    const { addToCart } = useContext(CartContext)
     const { id } = useParams()
     const shoe = shoes.find((item) => item.id === parseInt(id))
     const [selectedSize, setSelectedSize] = useState(null)
     if (!shoe) return <h1 className="text-center mt-10">Shoe not found</h1>
 
     return (
+
         <div className="p-6 md:flex gap-10 mt-10">
+            <button
+                onClick={() => navigate(-1)}
+                className="flex items-center gap-2 text-sm text-gray-600 hover:text-black mb-4"
+            >
+                ← Back
+            </button>
             {/* LEFT: IMAGE */}
             <div className="md:w-1/2">
                 <img
@@ -51,8 +63,9 @@ const ShoeDetailPage = () => {
 
                 {/* BUTTON */}
                 <button
+                    onClick={() => addToCart(shoe, selectedSize)}
                     className={`mt-8 w-full py-3 rounded-lg text-white font-semibold transition
-            ${selectedSize
+                    ${selectedSize
                             ? 'bg-black hover:bg-gray-800'
                             : 'bg-gray-400 cursor-not-allowed'}`}
                     disabled={!selectedSize}

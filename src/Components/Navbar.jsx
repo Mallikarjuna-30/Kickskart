@@ -6,7 +6,7 @@ const Navbar = () => {
             <Link to="/" className='text-2xl font-bold text-black cursor-pointer'>KicksKart</Link>
             <div className='flex gap-4'>
                 <Link to="/" className='text-lg font-medium hover:text-orange-600 transition-all duration-300 cursor-pointer'>Home</Link>
-                <Link to="/cart" className='text-lg font-medium hover:text-orange-600 transition-all duration-300 cursor-pointer'>Cart</Link>
+                <Link to="/Cart" className='text-lg font-medium hover:text-orange-600 transition-all duration-300 cursor-pointer'>Cart</Link>
             </div>
         </div>
     )
