@@ -1,16 +1,113 @@
-# React + Vite
+# 👟 KicksKart – Shoe E-Commerce Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+KicksKart is a modern and scalable **shoe e-commerce web application** built using React.
+It mimics the core workflow of platforms like Amazon and Flipkart, focusing on clean UI, component-based architecture, and future scalability.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* 🏠 Product Listing Page (Home)
+* 👟 Shoe Details Page
+* 📏 Size Selection (Interactive UI)
+* ⭐ Product Ratings
+* 🔗 Dynamic Routing using React Router
+* 🎨 Responsive UI with Tailwind CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend:** React (Vite)
+* **Styling:** Tailwind CSS
+* **Routing:** React Router DOM
+* **State Management:** (Planned – Context API)
+* **Backend:** (Planned – Node.js + Express + MongoDB)
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+ ├── Components/
+ │    ├── Navbar.jsx
+ │    ├── ShoeCard.jsx
+ │
+ ├── Pages/
+ │    ├── Home.jsx
+ │    ├── ShoeDetailPage.jsx
+ │
+ ├── Data/
+ │    ├── shoes.js
+ │
+ ├── App.jsx
+ ├── main.jsx
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository
+
+```
+git clone https://github.com/Mallikarjuna-30/Kickskart.git
+```
+
+2. Navigate to project folder
+
+```
+cd solesphere
+```
+
+3. Install dependencies
+
+```
+npm install
+```
+
+4. Run development server
+
+```
+npm run dev
+```
+
+---
+
+## 🔮 Future Improvements
+
+* 🛒 Add to Cart functionality (Context API)
+* 🔐 User Authentication (Login/Signup)
+* 💳 Payment Integration
+* 🔍 Search & Filters (by brand, price, category)
+* ❤️ Wishlist Feature
+* 📦 Order History
+* 🧑‍💼 Admin Dashboard
+
+---
+
+## 🎯 Learning Outcomes
+
+* Component-based architecture in React
+* Dynamic routing using React Router
+* State handling and UI interaction
+* Building scalable frontend structure
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork this repo and improve features.
+
+---
+
+## 📌 Author
+
+**Mallikarjuna Pattar**
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project, please give it a ⭐ on GitHub!
