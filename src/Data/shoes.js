@@ -4,110 +4,88 @@ const shoes = [
         name: "Nike Air Max",
         brand: "Nike",
         price: 4999,
-        image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+        image: "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg",
         sizes: [6, 7, 8, 9, 10],
         category: "Running",
         rating: 4.5,
-        description: "Lightweight running shoes with maximum comfort"
+        description: "Comfortable running shoes with air cushioning"
     },
     {
         id: 2,
         name: "Adidas Ultraboost",
         brand: "Adidas",
         price: 6999,
-        image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
+        image: "https://images.pexels.com/photos/19090/pexels-photo.jpg",
         sizes: [7, 8, 9, 10],
         category: "Sports",
         rating: 4.7,
-        description: "High-performance shoes with responsive cushioning"
+        description: "High-performance sports shoes"
     },
     {
         id: 3,
         name: "Puma RS-X",
         brand: "Puma",
         price: 3999,
-        image: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb",
+        image: "https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg",
         sizes: [6, 7, 8, 9],
         category: "Casual",
         rating: 4.3,
-        description: "Stylish sneakers for everyday wear"
+        description: "Stylish everyday sneakers"
     },
     {
         id: 4,
         name: "Nike Revolution",
         brand: "Nike",
         price: 2999,
-        image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a",
+        image: "https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg",
         sizes: [6, 7, 8, 9, 10],
         category: "Running",
         rating: 4.2,
-        description: "Affordable and durable running shoes"
+        description: "Lightweight running shoes"
     },
     {
         id: 5,
         name: "Adidas NMD",
         brand: "Adidas",
         price: 7999,
-        image: "https://images.unsplash.com/photo-1528701800489-20be3c1c0c6f",
+        image: "https://images.pexels.com/photos/267320/pexels-photo-267320.jpeg",
         sizes: [7, 8, 9, 10],
         category: "Lifestyle",
         rating: 4.6,
-        description: "Trendy sneakers with modern design"
+        description: "Modern lifestyle sneakers"
     },
     {
         id: 6,
-        name: "Puma Future Rider",
+        name: "Puma Rider",
         brand: "Puma",
         price: 4499,
-        image: "https://images.unsplash.com/photo-1584735175315-9d5df23be620",
+        image: "https://images.pexels.com/photos/1124466/pexels-photo-1124466.jpeg",
         sizes: [6, 7, 8, 9],
         category: "Casual",
         rating: 4.4,
-        description: "Retro-style sneakers with comfort"
+        description: "Retro style sneakers"
     },
     {
         id: 7,
-        name: "Nike Pegasus 39",
+        name: "Nike Pegasus",
         brand: "Nike",
         price: 8999,
-        image: "https://images.unsplash.com/photo-1606813907291-d86efa9b94db",
+        image: "https://images.pexels.com/photos/2529147/pexels-photo-2529147.jpeg",
         sizes: [7, 8, 9, 10, 11],
         category: "Running",
         rating: 4.8,
-        description: "Premium running shoes with responsive cushioning"
+        description: "Premium running shoes"
     },
     {
         id: 8,
         name: "Adidas Superstar",
         brand: "Adidas",
         price: 5499,
-        image: "https://images.unsplash.com/photo-1519741497674-611481863552",
+        image: "https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg",
         sizes: [6, 7, 8, 9],
         category: "Lifestyle",
         rating: 4.5,
-        description: "Classic street-style sneakers"
-    },
-    {
-        id: 9,
-        name: "Puma Smash V2",
-        brand: "Puma",
-        price: 3499,
-        image: "https://images.unsplash.com/photo-1600269452121-4f2416e55c28",
-        sizes: [6, 7, 8, 9],
-        category: "Casual",
-        rating: 4.1,
-        description: "Simple and stylish everyday sneakers"
-    },
-    {
-        id: 10,
-        name: "Nike Dunk Low",
-        brand: "Nike",
-        price: 9999,
-        image: "https://images.unsplash.com/photo-1597045566677-8cf032ed6634",
-        sizes: [7, 8, 9, 10],
-        category: "Lifestyle",
-        rating: 4.7,
-        description: "Iconic sneakers with modern comfort"
+        description: "Classic sneakers design"
     }
 ]
 
