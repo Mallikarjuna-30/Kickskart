@@ -1,18 +1,27 @@
-# 👟 KicksKart – Shoe E-Commerce Web App
+# 👟 Kickskart – Shoe E-Commerce Web App
 
-KicksKart is a modern and scalable **shoe e-commerce web application** built using React.
-It mimics the core workflow of platforms like Amazon and Flipkart, focusing on clean UI, component-based architecture, and future scalability.
+Kickskart is a modern and responsive **shoe e-commerce web application** built using React.
+It replicates the core workflow of platforms like Amazon and Flipkart with a clean UI and scalable architecture.
+
+---
+
+## 🌐 Live Demo
+
+🔗 https://kickskart.vercel.app/
 
 ---
 
 ## 🚀 Features
 
-* 🏠 Product Listing Page (Home)
-* 👟 Shoe Details Page
-* 📏 Size Selection (Interactive UI)
-* ⭐ Product Ratings
-* 🔗 Dynamic Routing using React Router
-* 🎨 Responsive UI with Tailwind CSS
+* 🏠 Product Listing Page
+* 👟 Product Details Page
+* 📏 Size Selection
+* 🛒 Cart System (Add, Remove, Quantity Control)
+* 💾 Cart Persistence using localStorage
+* 💳 Checkout Page with Form Validation
+* 🎉 Order Success Page
+* 🔙 Back Navigation
+* 📱 Responsive Design (Mobile + Desktop)
 
 ---
 
@@ -21,14 +30,14 @@ It mimics the core workflow of platforms like Amazon and Flipkart, focusing on c
 * **Frontend:** React (Vite)
 * **Styling:** Tailwind CSS
 * **Routing:** React Router DOM
-* **State Management:** (Planned – Context API)
-* **Backend:** (Planned – Node.js + Express + MongoDB)
+* **State Management:** Context API
+* **Deployment:** Vercel
 
 ---
 
 ## 📁 Project Structure
 
-```
+```id="w3b9d2"
 src/
  ├── Components/
  │    ├── Navbar.jsx
@@ -37,6 +46,12 @@ src/
  ├── Pages/
  │    ├── Home.jsx
  │    ├── ShoeDetailPage.jsx
+ │    ├── Cart.jsx
+ │    ├── Checkout.jsx
+ │    ├── OrderSuccess.jsx
+ │
+ ├── context/
+ │    ├── CartContext.jsx
  │
  ├── Data/
  │    ├── shoes.js
@@ -49,65 +64,42 @@ src/
 
 ## ⚙️ Installation & Setup
 
-1. Clone the repository
-
-```
-git clone https://github.com/Mallikarjuna-30/Kickskart.git
-```
-
-2. Navigate to project folder
-
-```
-cd solesphere
-```
-
-3. Install dependencies
-
-```
+```id="setup-steps"
+git clone https://github.com/Malllikarjuna-30/kickskart.git
+cd kickskart
 npm install
-```
-
-4. Run development server
-
-```
 npm run dev
 ```
 
 ---
 
+## 🔥 Key Learnings
+
+* Global state management using Context API
+* Dynamic routing with React Router
+* Building scalable component architecture
+* Managing persistent state with localStorage
+* Creating full eCommerce workflow
+
+---
+
 ## 🔮 Future Improvements
 
-* 🛒 Add to Cart functionality (Context API)
-* 🔐 User Authentication (Login/Signup)
-* 💳 Payment Integration
-* 🔍 Search & Filters (by brand, price, category)
+* 🔍 Search & Filters
+* 🛒 Cart count in Navbar
 * ❤️ Wishlist Feature
+* 💳 Payment Integration
+* 🔐 Authentication (Login/Signup)
 * 📦 Order History
-* 🧑‍💼 Admin Dashboard
 
 ---
 
-## 🎯 Learning Outcomes
+## 👨‍💻 Author
 
-* Component-based architecture in React
-* Dynamic routing using React Router
-* State handling and UI interaction
-* Building scalable frontend structure
+**Mallikarjuna**
 
 ---
 
-## 🤝 Contributing
+## ⭐ Support
 
-Contributions are welcome! Feel free to fork this repo and improve features.
-
----
-
-## 📌 Author
-
-**Mallikarjuna Pattar**
-
----
-
-## ⭐ Show Your Support
-
-If you like this project, please give it a ⭐ on GitHub!
+If you like this project, give it a ⭐ on GitHub!
