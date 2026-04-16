@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom'
 import Cart from './Pages/CartPage'
 import CheckoutPage from './Pages/CheckoutPage'
 import OrderSuccessPage from './Pages/OrderSuccessPage'
+import ToastUI from './Components/ToastUI'
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/order-success" element={<OrderSuccessPage />} />
       </Routes>
+      <ToastUI />
     </div>
   )
 }

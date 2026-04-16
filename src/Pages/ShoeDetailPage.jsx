@@ -4,10 +4,12 @@ import shoes from '../Data/shoes'
 import { useContext } from "react"
 import { useNavigate } from "react-router-dom"
 import { CartContext } from "../Context/CartContext"
+import { ToastContext } from '../Context/ToastContext'
 
 const ShoeDetailPage = () => {
     const navigate = useNavigate()
     const { addToCart } = useContext(CartContext)
+    const { showToast } = useContext(ToastContext)
     const { id } = useParams()
     const shoe = shoes.find((item) => item.id === parseInt(id))
     const [selectedSize, setSelectedSize] = useState(null)
@@ -63,7 +65,7 @@ const ShoeDetailPage = () => {
 
                 {/* BUTTON */}
                 <button
-                    onClick={() => addToCart(shoe, selectedSize)}
+                    onClick={() => { addToCart(shoe, selectedSize); showToast("Item added to cart"); }}
                     className={`mt-8 w-full py-3 rounded-lg text-white font-semibold transition
                     ${selectedSize
                             ? 'bg-black hover:bg-gray-800'
@@ -73,7 +75,7 @@ const ShoeDetailPage = () => {
                     {selectedSize ? "Add to Cart" : "Select Size First"}
                 </button>
             </div>
-        </div>
+        </div >
     )
 }
 
