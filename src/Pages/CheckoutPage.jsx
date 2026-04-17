@@ -29,8 +29,6 @@ const Checkout = () => {
             alert("Please fill all details")
             return
         }
-
-        alert("Order placed successfully! 🎉")
         clearCart()
         navigate("/order-success", { state: { cart, total } })
     }
@@ -81,7 +79,7 @@ const Checkout = () => {
             </div>
 
             {/* RIGHT: ORDER SUMMARY */}
-            <div className="md:w-1/3 bg-white p-6 rounded-xl shadow h-fit">
+            <div className="md:w-1/3 bg-white p-6 rounded-xl shadow h-fit mt-3">
                 <h2 className="text-xl font-bold mb-4">
                     Order Summary ({cart.length} items)
                 </h2>
