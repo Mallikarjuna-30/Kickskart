@@ -43,3 +43,7 @@ html {
 .delay-400 {
     animation-delay: 0.2s;
 }
+
+.dicountVal {
+    text-decoration: none !important;
+}

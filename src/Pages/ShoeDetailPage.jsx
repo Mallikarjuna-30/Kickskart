@@ -14,7 +14,7 @@ const ShoeDetailPage = () => {
     const shoe = shoes.find((item) => item.id === parseInt(id))
     const [selectedSize, setSelectedSize] = useState(null)
     if (!shoe) return <h1 className="text-center mt-10">Shoe not found</h1>
-
+    const totalPrice = Math.round(shoe.price - (shoe.price * shoe.discount) / 100)
     return (
 
         <div className="p-6 md:flex gap-10 mt-10">
@@ -37,8 +37,12 @@ const ShoeDetailPage = () => {
             <div className="md:w-1/2 mt-6 md:mt-0">
                 <h1 className="text-3xl font-bold">{shoe.name}</h1>
                 <p className="text-gray-500 mt-1">{shoe.brand}</p>
-                <p className="text-2xl text-blue-600 font-semibold mt-3">
-                    ₹{shoe.price}
+                <p className='text-lg font-bold text-black mt-1'>₹{totalPrice}</p>
+                <p className='text-sm text-gray-500 mt-1'>
+                    <span className='line-through'>₹{shoe.price}</span>
+                    <span className='text-green-600 text-m font-semibold ml-2'>
+                        {shoe.discount}% OFF
+                    </span>
                 </p>
                 <p className="mt-4 text-gray-600 leading-relaxed">
                     {shoe.description}
@@ -52,10 +56,9 @@ const ShoeDetailPage = () => {
                             <button
                                 key={size}
                                 onClick={() => setSelectedSize(size)}
-                                className={`px-4 py-2 border rounded-lg transition 
-                  ${selectedSize === size
-                                        ? 'bg-black text-white'
-                                        : 'hover:bg-black hover:text-white'}`}
+                                className={`px-4 py-2 border rounded-lg transition ${selectedSize === size
+                                    ? 'bg-black text-white'
+                                    : 'hover:bg-black hover:text-white'}`}
                             >
                                 {size}
                             </button>
