@@ -9,6 +9,10 @@ const CartSummary = () => {
     const subtotal = cart.reduce((acc, item) => acc + item.price * item.quantity, 0)
     const shipping = 100
     const total = subtotal + shipping
+    const totalSavings = cart.reduce((acc, item) => {
+        const savingsPerItem = (item.originalPrice || item.price) - item.price
+        return acc + savingsPerItem * item.quantity
+    }, 0)
     return (
         <div className="w-full md:w-80 border p-6 rounded-lg shadow-sm h-fit sticky top-24">
             <h2 className='text-xl font-semibold mb-4'>Order Summary</h2>
@@ -16,6 +20,11 @@ const CartSummary = () => {
                 <span>SubTotal</span>
                 <span>₹{subtotal}</span>
             </div>
+            {totalSavings > 0 && (
+                <div className="bg-green-100 text-green-700 p-3 rounded mt-3 text-center font-semibold">
+                    🎉 You saved ₹{totalSavings}!
+                </div>
+            )}
             <div className='flex justify-between mb-2'>
                 <span>Shipping</span>
                 <span>₹{shipping}</span>
